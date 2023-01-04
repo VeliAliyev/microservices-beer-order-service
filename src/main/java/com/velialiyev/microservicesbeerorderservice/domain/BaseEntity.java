@@ -1,6 +1,7 @@
 package com.velialiyev.microservicesbeerorderservice.domain;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.hibernate.Hibernate;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
@@ -15,10 +16,9 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
-@MappedSuperclass
 @NoArgsConstructor
-@AllArgsConstructor
+@MappedSuperclass
+@SuperBuilder
 public class BaseEntity {
     @Id
     @GeneratedValue(generator = "UUID")

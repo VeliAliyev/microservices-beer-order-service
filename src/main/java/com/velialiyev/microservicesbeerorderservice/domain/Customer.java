@@ -1,6 +1,7 @@
 package com.velialiyev.microservicesbeerorderservice.domain;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +12,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Entity
-@Builder
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Customer extends BaseEntity{

@@ -2,6 +2,7 @@ package com.velialiyev.microservicesbeerorderservice.domain;
 
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -14,7 +15,7 @@ import java.util.Set;
 @Setter
 @Getter
 @Entity
-@Builder
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
 public class BeerOrder extends BaseEntity{
